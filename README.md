@@ -1,2 +1,7 @@
-# LPC
-Some Code Exercises
+# Some coding Exercises
+
+## URI
+
+## CSES
+
+## LeetCode

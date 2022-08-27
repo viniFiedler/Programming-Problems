@@ -1,4 +1,4 @@
-// frogs 2
+// AtCoder dp_b	Frog 2
 
 #include <bits/stdc++.h>
 using namespace std;

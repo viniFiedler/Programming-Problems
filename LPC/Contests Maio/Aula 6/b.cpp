@@ -1,4 +1,4 @@
-// Cumulative Sum Query
+// SPOJ CSUMQ	Cumulative Sum Query
 
 #include <bits/stdc++.h>
 using namespace std;
