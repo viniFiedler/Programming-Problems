@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define MAX 100000
+#define MAX 100001
 int main()
 {
     int prefixo[MAX];
@@ -31,16 +31,12 @@ int main()
                 prefixo[i - 1] = 1;
             }
         }
-
         sufixo[tam - 1] = 1;
         for (int i = tam - 2; i >= 0; i--)
         {
-            if (sequencia[i] > sequencia[i + 1])
+            if (sufixo[i + 1] && sequencia[i + 1] > sequencia[i])
             {
-                for (; i < tam; i++)
-                {
-                    prefixo[i] = 0;
-                }
+                prefixo[i] = 1;
             }
         }
     }

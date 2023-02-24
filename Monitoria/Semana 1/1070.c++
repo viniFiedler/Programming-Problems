@@ -4,9 +4,11 @@ using namespace std;
 
 int main()
 {
+    // scanf fast
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    int num;
+
+        int num;
     cin >> num;
     if (num == 2 || num == 3)
         cout << "NO SOLUTION\n";
