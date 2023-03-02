@@ -1,4 +1,4 @@
-// https://open.kattis.com/problems/sim
+//  https://open.kattis.com/problems/sim
 #include <bits/stdc++.h>
 #include <iostream>
 

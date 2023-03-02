@@ -5,7 +5,7 @@ using namespace std;
 /*
 
 Problema:
-    Usar estrutura de dados para tirar tanto do meio
+    Usar  estrutura de dados para tirar tanto do meio
     quanto do final em um bigO razoável
 
 Resolução:

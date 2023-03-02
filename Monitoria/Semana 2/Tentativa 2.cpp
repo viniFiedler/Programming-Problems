@@ -1,12 +1,10 @@
 // https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1113
 #include <bits/stdc++.h>
-#include <iostream>
-
 using namespace std;
 /*
 Exercicio:
     Basicamenta há uma lista circular de filas de inteiros
-    cada  inteiro representa uma posição da lista circular,
+    cada inteiro representa uma posição da lista circular,
     seu objetivo é calcular o tempo (baseado no número de operações)
     que é gasto para esvaziar todas as filas.
 
