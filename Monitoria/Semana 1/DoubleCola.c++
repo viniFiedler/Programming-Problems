@@ -45,6 +45,7 @@ int main()
 
     int resultado = K - 1;
 
+    // se o K for menor que 5 não é necessário fazer nenhuma verificação
     if (K > 5)
     {
         for (int i = 1; i <= 30; i++)
