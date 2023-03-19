@@ -13,8 +13,7 @@ int main()
         if (!(n & 1))
             n /= 2;
         else
-            n = n + n + n + 1;
-        cout << n << " ";
+            cout << n << " ";
     }
     cout << endl;
 
