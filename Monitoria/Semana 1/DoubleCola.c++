@@ -20,8 +20,7 @@ pos = (K - somatória(n)) / 2^n+1 sendo pos o número da posição da pessoa na 
 
 note que K sempre será > somatoria(n)
 
-([0,1[ Sheldon, [1,2[] Leonard... [4,5]Howard)
-Os Howards possuem intervalo fechado, já que quando K == 5.2^n, a pessoa a beber é SEMPRE o Howard.
+(1 Sheldon, 2 Leonard...)
 
 
 Portante, o mais demorado da nossa busca é achar o n,
@@ -36,23 +35,21 @@ int main()
 
     // a função POW() é custosa, o ideal seria utilizar operações bitwise para
     // achar potências de 2, mas nesse ponto do curso ainda não vimos, portanto
-    // utlizarei um multiplicador (2^n), Para mais explicações segue o Link:
-    // https://stackoverflow.com/questions/12556906/are-2n-exponent-calculations-really-less-efficient-than-bit-shifts
+    // utlizarei um multiplicador (2^n)
     int multiplicador = 1;
     int valor = 5;
 
     cin >> K;
-
     int resultado = K - 1;
 
-    // se o K for menor que 5 não é necessário fazer nenhuma verificação
     if (K > 5)
     {
         for (int i = 1; i <= 30; i++)
         {
             if (K <= valor)
             {
-                // se parou entao 5.2^n+1 maior que k (oq não deve acontecer, portanto devemos diminuir esse valor)
+                // se parou entao 5.2^n+1 maior que k
+                break;
             }
 
             multiplicador *= 2;
@@ -66,7 +63,9 @@ int main()
 
         resultado = (int)(K - valor) / multiplicador;
     }
-
+    // cout << multiplicador << endl;
+    // cout << valor << endl;
+    // cout << resultado << endl;
     switch (resultado)
     {
     case 0:
