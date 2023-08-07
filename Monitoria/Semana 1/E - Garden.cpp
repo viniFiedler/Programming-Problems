@@ -3,7 +3,7 @@
 using namespace std;
 // bem simples, o maior divisor é o melhor balde
 // o importante é não pensar demais e dificultar o exercicio
-// sol O(1)
+// sol O(n)
 int main()
 {
     int nBaldes, tamanho;
